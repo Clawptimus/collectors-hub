@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Articles | The Collector's Archive</title>
+    <meta name="description" content="Browse the complete archive of collector guides, identification resources, and restoration tutorials for vintage and antique collecting.">
+    <link rel="canonical" href="https://collectorsarchive.com/articles.html">
+    
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://collectorsarchive.com/articles.html">
+    <meta property="og:title" content="All Articles | The Collector's Archive">
+    <meta property="og:description" content="Browse the complete archive of collector guides, identification resources, and restoration tutorials for vintage and antique collecting.">
+    <meta property="og:image" content="https://collectorsarchive.com/images/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="All Articles | The Collector's Archive">
+    <meta name="twitter:description" content="Browse the complete archive of collector guides, identification resources, and restoration tutorials for vintage and antique collecting.">
+    <meta name="twitter:image" content="https://collectorsarchive.com/images/og-image.jpg">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    
+    <!-- Navigation -->
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon" aria-hidden="true">◈</span>
+                <span class="logo-text">The Collector's Archive</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="primary-navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html" class="active" aria-current="page">All Articles</a></li>
+                <li><a href="index.html#topics">Topics</a></li>
+                <li><a href="index.html#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+    
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-separator" aria-hidden="true">/</span>
+            <span class="breadcrumb-current" aria-current="page">All Articles</span>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Article Archive</h1>
+            <p class="page-subtitle">Browse our complete collection of expert guides, historical deep-dives, and practical collecting resources</p>
+        </div>
+    </header>
+
+    <!-- Filters & Search -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-bar">
+                <div class="search-box">
+                    <input type="text" id="article-search" placeholder="Search articles..." class="search-input">
+                    <button class="search-btn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="filter-group">
+                    <select id="topic-filter" class="filter-select">
+                        <option value="">All Topics</option>
+                        <option value="cameras">Vintage Cameras</option>
+                        <option value="telephones">Antique Telephones</option>
+                        <option value="typewriters">Vintage Typewriters</option>
+                        <option value="clocks">Antique Clocks</option>
+                        <option value="gaming">Retro Gaming</option>
+                        <option value="pens">Vintage Pens</option>
+                        <option value="toys">Antique Toys</option>
+                        <option value="tools">Vintage Tools</option>
+                    </select>
+                    <select id="sort-filter" class="filter-select">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="popular">Most Popular</option>
+                        <option value="az">A-Z</option>
+                    </select>
+                </div>
+                <div class="view-toggle" role="group" aria-label="View options">
+                    <button class="view-btn active" data-view="grid" aria-label="Grid view" aria-pressed="true">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                        </svg>
+                    </button>
+                    <button class="view-btn" data-view="list" aria-label="List view" aria-pressed="false">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="active-filters" id="active-filters">
+                <!-- Active filters will appear here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Grid -->
+    <section class="articles-section">
+        <div class="container">
+            <div class="articles-grid" id="articles-grid">
+                
+                <!-- Article Card 1 -->
+                <article class="article-card" data-topic="cameras">
+                    <div class="article-image">
+                        <div class="placeholder-img placeholder-camera"></div>
+                        <span class="article-category">Vintage Cameras</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>The Complete Guide to Leica M-Series Cameras</h3>
+                        <p>From the original M3 to the modern MP, explore the most iconic rangefinder cameras ever made. Learn identification, valuation, and what makes these German precision instruments so sought after.</p>
+                        <div class="article-meta">
+                            <span class="article-date">Mar 15, 2026</span>
+                            <span class="article-read">12 min read</span>
+                        </div>
+                        <a href="#" class="article-link">Read Article →</a>
+                    </div>
+                </article>
+
+                <!-- Article Card 2 -->
+                <article class="article-card" data-topic="telephones">
+                    <div class="article-image">
+                        <div class="placeholder-img placeholder-telephone"></div>
+                        <span class="article-category">Antique Telephones</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Western Electric Model 500: America's Phone</h3>
+                        <p>The story of the most produced telephone in history. Learn to identify different eras, spot reproductions, and understand why this iconic design dominated American homes for decades.</p>
+                        <div class="article-meta">
+                            <span class="article-date">Mar 12, 2026</span>
+                            <span class="article-read">8 min read</span>
+                        </div>
+                        <a href="#" class="article-link">Read Article →</a>
+                    </div>
+                </article>
+
+                <!-- Article Card 3 -->
+                <article class="article-card" data-topic="typewriters">
+                    <div class="article-image">
+                        <div class="placeholder-img placeholder-typewriter"></div>
+                        <span class="article-category">Vintage Typewriters</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Royal Quiet De Luxe: The Writer's Choice</h3>
+                        <p>Why this 1950s portable remains the gold standard for typewriter enthusiasts. A deep dive into its mechanics, variations, and enduring appeal among collectors and writers alike.</p>
+                        <div class="article-meta">
+                            <span class="article-date">Mar 10, 2026</span>
+                            <span class="article-read">10 min read</span>
+                        </div>
+                        <a href="#" class="article-link">Read Article →</a>
+                    </div>
+                </article>
+
+                <!-- Article Card 4 -->
+                <article class="article-card" data-topic="cameras">
+                    <div class="article-image">
+                        <div class="placeholder-img placeholder-camera"></div>
+                        <span class="article-category">Vintage Cameras</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Polaroid SX-70: Instant Photography Icon</h3>
+                        <p>The folding SLR that revolutionized instant photography. Learn about its innovative design, collectible variations, and tips for shooting with vintage Polaroid cameras today.</p>
+                        <div class="article-meta">
+                            <span class="article-date">Mar 8, 2026</span>
+                            <span class="article-read">9 min read</span>
+                        </div>
+                        <a href="#" class="article-link">Read Article →</a>
+                    </div>
+                </article>
+
+                <!-- Article Card 5 -->
+                <article class="article-card" data-topic="clocks">
+                    <div class="article-image">
+                        <div class="placeholder-img placeholder-clock"></div>
+                        <span class="article-category">Antique Clocks</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Understanding Grandfather Clock Movements</h3>
+                        <p>A comprehensive guide to the mechanics, makers, and value factors of longcase clocks. From English brass dials to American painted faces, learn what collectors look for.</p>
+                        <div class="article-meta">
+                            <span class="article-date">Mar 5, 2026</span>
+                            <span class="article-read">15 min read</span>
+                        </div>
+                        <a href="#" class="article-link">Read Article →</a>
+                    </div>
+                </article>
+
+                <!-- Article Card 6 -->
+                <article class="article-card" data-topic="gaming">
+                    <div class="article-image">
+                        <div class="placeholder-img placeholder-gaming"></div>
+                        <span class="article-category">Retro Gaming</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Nintendo Entertainment System: A Collector's Guide</h3>
+                        <p>From the iconic gray box to rare variants and valuable games. Everything you need to know about collecting, maintaining, and enjoying the console that saved the video game industry.</p>
+                        <div class="article-meta">
+                            <span class="article-date">Mar 3, 2026</span>
+                            <span class="article-read">11 min read</span>
+                        </div>
+                        <a href="#" class="article-link">Read Article →</a>
+                    </div>
+                </article>
+
+                <!-- Article Card 7 -->
+                <article class="article-card" data-topic="pens">
+                    <div class="article-image">
+                        <div class="placeholder-img placeholder-pen"></div>
+                        <span class="article-category">Vintage Pens</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Parker Vacumatic: Art Deco Writing Excellence</h3>
+                        <p>The transparent fountain pen that defined 1930s elegance. Learn to identify generations, assess transparency, and understand why these pens remain highly collectible today.</p>
+                        <div class="article-meta">
+                            <span class="article-date">Feb 28, 2026</span>
+                            <span class="article-read">8 min read</span>
+                        </div>
+                        <a href="#" class="article-link">Read Article →</a>
+                    </div>
+                </article>
+
+                <!-- Article Card 8 -->
+                <article class="article-card" data-topic="toys">
+                    <div class="article-image">
+                        <div class="placeholder-img placeholder-toy"></div>
+                        <span class="article-category">Antique Toys</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Cast Iron Toys: Hubley, Arcade, and Kenton</h3>
+                        <p>The golden age of American cast iron toys. Identification guides, rarity factors, and restoration tips for these heavy, detailed collectibles from the early 20th century.</p>
+                        <div class="article-meta">
+                            <span class="article-date">Feb 25, 2026</span>
+                            <span class="article-read">12 min read</span>
+                        </div>
+                        <a href="#" class="article-link">Read Article →</a>
+                    </div>
+                </article>
+
+                <!-- Article Card 9 -->
+                <article class="article-card" data-topic="cameras">
+                    <div class="article-image">
+                        <div class="placeholder-img placeholder-camera"></div>
+                        <span class="article-category">Vintage Cameras</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Rolleiflex: The Definitive TLR Camera</h3>
+                        <p>Why the twin-lens reflex format captivated photographers for decades. A guide to Rolleiflex models, Zeiss vs. Schneider lenses, and what to look for when buying.</p>
+                        <div class="article-meta">
+                            <span class="article-date">Feb 22, 2026</span>
+                            <span class="article-read">10 min read</span>
+                        </div>
+                        <a href="#" class="article-link">Read Article →</a>
+                    </div>
+                </article>
+
+                <!-- Article Card 10 -->
+                <article class="article-card" data-topic="telephones">
+                    <div class="article-image">
+                        <div class="placeholder-img placeholder-telephone"></div>
+                        <span class="article-category">Antique Telephones</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Candlestick Phones: 1890s to 1930s</h3>
+                        <p>The elegant upright design that defined early telephony. Learn to identify manufacturers, date your phone, and understand the technology behind these beautiful instruments.</p>
+                        <div class="article-meta">
+                            <span class="article-date">Feb 20, 2026</span>
+                            <span class="article-read">9 min read</span>
+                        </div>
+                        <a href="#" class="article-link">Read Article →</a>
+                    </div>
+                </article>
+
+                <!-- Article Card 11 -->
+                <article class="article-card" data-topic="tools">
+                    <div class="article-image">
+                        <div class="placeholder-img placeholder-tool"></div>
+                        <span class="article-category">Vintage Tools</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Stanley Planes: A Woodworker's Guide</h3>
+                        <p>From the common Bailey to rare Bed Rock models. Learn to identify Stanley hand planes by type, age, and value in this comprehensive collector's guide.</p>
+                        <div class="article-meta">
+                            <span class="article-date">Feb 18, 2026</span>
+                            <span class="article-read">14 min read</span>
+                        </div>
+                        <a href="#" class="article-link">Read Article →</a>
+                    </div>
+                </article>
+
+                <!-- Article Card 12 -->
+                <article class="article-card" data-topic="gaming">
+                    <div class="article-image">
+                        <div class="placeholder-img placeholder-gaming"></div>
+                        <span class="article-category">Retro Gaming</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>Game Boy: The Portable Revolution</h3>
+                        <p>Nintendo's indestructible handheld and its legendary game library. Collecting tips, hardware variants, and the most valuable titles for the system that started mobile gaming.</p>
+                        <div class="article-meta">
+                            <span class="article-date">Feb 15, 2026</span>
+                            <span class="article-read">10 min read</span>
+                        </div>
+                        <a href="#" class="article-link">Read Article →</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="pagination-btn prev" disabled>← Previous</button>
+                <div class="pagination-numbers">
+                    <span class="pagination-number active">1</span>
+                    <span class="pagination-number">2</span>
+                    <span class="pagination-number">3</span>
+                    <span class="pagination-dots">...</span>
+                    <span class="pagination-number">5</span>
+                </div>
+                <button class="pagination-btn next">Next →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topics Quick Nav -->
+    <section class="topics-quick-nav">
+        <div class="container">
+            <h3>Browse by Topic</h3>
+            <div class="topic-tags">
+                <a href="?topic=cameras" class="topic-tag">Vintage Cameras</a>
+                <a href="?topic=telephones" class="topic-tag">Antique Telephones</a>
+                <a href="?topic=typewriters" class="topic-tag">Typewriters</a>
+                <a href="?topic=clocks" class="topic-tag">Antique Clocks</a>
+                <a href="?topic=gaming" class="topic-tag">Retro Gaming</a>
+                <a href="?topic=pens" class="topic-tag">Vintage Pens</a>
+                <a href="?topic=toys" class="topic-tag">Antique Toys</a>
+                <a href="?topic=tools" class="topic-tag">Vintage Tools</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">◈</span>
+                        <span class="logo-text">The Collector's Archive</span>
+                    </a>
+                    <p>Expert guides for vintage and antique collecting, restoration, and appreciation.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="articles.html">All Articles</a></li>
+                        <li><a href="index.html#topics">Topics</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>Topics</h4>
+                    <ul>
+                        <li><a href="?topic=cameras">Vintage Cameras</a></li>
+                        <li><a href="?topic=telephones">Antique Telephones</a></li>
+                        <li><a href="?topic=typewriters">Typewriters</a></li>
+                        <li><a href="?topic=clocks">Antique Clocks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Identification Guides</a></li>
+                        <li><a href="#">Restoration Tips</a></li>
+                        <li><a href="#">Valuation Insights</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Collector's Archive. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
