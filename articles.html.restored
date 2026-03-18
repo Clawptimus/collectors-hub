@@ -245,11 +245,11 @@
         </div>
     </header>
 
-    <!-- Search -->
+    <!-- Filters & Search -->
     <section class="filters-section">
         <div class="container">
             <div class="filters-bar">
-                <div class="search-box" style="flex: 1; max-width: 500px;">
+                <div class="search-box">
                     <input type="text" id="article-search" placeholder="Search articles..." class="search-input">
                     <button class="search-btn" aria-label="Search">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -257,6 +257,22 @@
                             <path d="m21 21-4.35-4.35"></path>
                         </svg>
                     </button>
+                </div>
+                <div class="filter-group">
+                    <select id="topic-filter" class="filter-select">
+                        <option value="">All Topics</option>
+                        <option value="cameras">Vintage Cameras</option>
+                        <option value="gaming">Retro Gaming</option>
+                        <option value="pens">Vintage Pens</option>
+                        <option value="toys">Antique Toys</option>
+                        <option value="tools">Vintage Tools</option>
+                    </select>
+                    <select id="sort-filter" class="filter-select">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="popular">Most Popular</option>
+                        <option value="az">A-Z</option>
+                    </select>
                 </div>
                 <div class="view-toggle" role="group" aria-label="View options">
                     <button class="view-btn active" data-view="grid" aria-label="Grid view" aria-pressed="true">
@@ -275,6 +291,9 @@
                         </svg>
                     </button>
                 </div>
+            </div>
+            <div class="active-filters" id="active-filters">
+                <!-- Active filters will appear here -->
             </div>
         </div>
     </section>
@@ -643,175 +662,19 @@
                     </div>
                 </article>
 
-                <!-- New article: Coleman 220 Lantern Restoration -->
-                <article class="article-card" data-topic="camping">
-                    <div class="article-content">
-                        <h3>Coleman 220 Lantern Restoration & Maintenance</h3>
-                        <p>Step-by-step guide to restoring Coleman 220/228 double-mantle white-gas lanterns: generator service, pump maintenance, pressure testing, and safe lighting.</p>
-                        <div class="article-meta">
-                            <span class="article-date">Mar 2026</span>
-                            <span class="article-read">6 min read</span>
-                        </div>
-                        <a href="articles/coleman-220-lantern-restoration.html" class="article-link">Read Article →</a>
-                    </div>
-                </article>
+            </div>
 
-                <!-- New article: KitchenAid K5SS -->
-                <article class="article-card" data-topic="appliance">
-                    <div class="article-content">
-                        <h3>KitchenAid K5SS Restoration</h3>
-                        <p>Grease repack, worm gear service, planetary maintenance and speed control tips for restoring classic KitchenAid K5SS bowl-lift mixers.</p>
-                        <div class="article-meta">
-                            <span class="article-date">Mar 2026</span>
-                            <span class="article-read">7 min read</span>
-                        </div>
-                        <a href="articles/kitchenaid-k5ss-restoration.html" class="article-link">Read Article →</a>
-                    </div>
-                </article>
-
-                <!-- New article: Dual 1219 Turntable Restoration -->
-                <article class="article-card" data-topic="audio">
-                    <div class="article-content">
-                        <h3>Dual 1219 & 1229 Turntable Restoration</h3>
-                        <p>Idler-drive service, setup, maintenance, and troubleshooting for classic Dual record players.</p>
-                        <div class="article-meta">
-                            <span class="article-date">Mar 2026</span>
-                            <span class="article-read">7 min read</span>
-                        </div>
-                        <a href="articles/dual-1219-turntable-restoration.html" class="article-link">Read Article →</a>
-                    </div>
-                </article>
-
-                <!-- New article: Bernina 830 Record -->
-                <article class="article-card" data-topic="sewing">
-                    <div class="article-content">
-                        <h3>Bernina 830 Record Mastery</h3>
-                        <p>Maintenance, timing, troubleshooting and quilter setup advice for the Bernina 830 Record sewing machine.</p>
-                        <div class="article-meta">
-                            <span class="article-date">Mar 2026</span>
-                            <span class="article-read">8 min read</span>
-                        </div>
-                        <a href="articles/bernina-830-record.html" class="article-link">Read Article →</a>
-                    </div>
-                </article>
-
-                <!-- New article: Vintage Typewriter Collecting -->
-                <article class="article-card" data-topic="collecting">
-                    <div class="article-content">
-                        <h3>Vintage Typewriter Collecting</h3>
-                        <p>History, model highlights, buying tips and basic restoration for vintage typewriter enthusiasts.</p>
-                        <div class="article-meta">
-                            <span class="article-date">Mar 2026</span>
-                            <span class="article-read">7 min read</span>
-                        </div>
-                        <a href="articles/vintage-typewriter-collecting.html" class="article-link">Read Article →</a>
-                    </div>
-                </article>
-
-                <!-- New article: Key Collecting -->
-                <article class="article-card" data-topic="collecting">
-                    <div class="article-content">
-                        <h3>The Ultimate Key Collectors Guide</h3>
-                        <p>How to start, build, and preserve a meaningful collection of keys—identification, display, and sourcing tips.</p>
-                        <div class="article-meta">
-                            <span class="article-date">Mar 2026</span>
-                            <span class="article-read">7 min read</span>
-                        </div>
-                        <a href="articles/key-collecting.html" class="article-link">Read Article →</a>
-                    </div>
-                </article>
-
-                <!-- New article: Vintage Camera Collecting -->
-                <article class="article-card" data-topic="cameras">
-                    <div class="article-content">
-                        <h3>Vintage Camera Collecting</h3>
-                        <p>Practical guide to collecting and preserving classic cameras, with testing, care, and buying guidance.</p>
-                        <div class="article-meta">
-                            <span class="article-date">Mar 2026</span>
-                            <span class="article-read">8 min read</span>
-                        </div>
-                        <a href="articles/vintage-camera-collecting.html" class="article-link">Read Article →</a>
-                    </div>
-                </article>
-
-                <!-- New article: Antique Map Collecting -->
-                <article class="article-card" data-topic="maps">
-                    <div class="article-content">
-                        <h3>Antique Map Collecting</h3>
-                        <p>Identify, date, and care for antique maps: paper conservation, framing, and spotting valuable editions.</p>
-                        <div class="article-meta">
-                            <span class="article-date">Mar 2026</span>
-                            <span class="article-read">6 min read</span>
-                        </div>
-                        <a href="articles/antique-map-collecting.html" class="article-link">Read Article →</a>
-                    </div>
-                </article>
-
-                <!-- New article: Pocket Watch Collecting -->
-                <article class="article-card" data-topic="watches">
-                    <div class="article-content">
-                        <h3>Pocket Watch Collecting</h3>
-                        <p>Guide to pocket watch movements, hallmarks, and restoration priorities for new collectors.</p>
-                        <div class="article-meta">
-                            <span class="article-date">Mar 2026</span>
-                            <span class="article-read">6 min read</span>
-                        </div>
-                        <a href="articles/pocket-watch-collecting.html" class="article-link">Read Article →</a>
-                    </div>
-                </article>
-
-                <!-- New article: Vintage Radio Collecting -->
-                <article class="article-card" data-topic="radio">
-                    <div class="article-content">
-                        <h3>Vintage Radio Collecting</h3>
-                        <p>Tips for sourcing, restoring, and documenting classic radios and tube-era electronics.</p>
-                        <div class="article-meta">
-                            <span class="article-date">Mar 2026</span>
-                            <span class="article-read">7 min read</span>
-                        </div>
-                        <a href="articles/vintage-radio-collecting.html" class="article-link">Read Article →</a>
-                    </div>
-                </article>
-
-                <!-- New article: Antique Telephone Collecting -->
-                <article class="article-card" data-topic="telephone">
-                    <div class="article-content">
-                        <h3>Antique Telephone Collecting</h3>
-                        <p>Overview of rotary phones, candlestick sets, and restoration approaches for telephone collectors.</p>
-                        <div class="article-meta">
-                            <span class="article-date">Mar 2026</span>
-                            <span class="article-read">6 min read</span>
-                        </div>
-                        <a href="articles/antique-telephone-collecting.html" class="article-link">Read Article →</a>
-                    </div>
-                </article>
-
-                <!-- New article: Antique Clock Collecting -->
-                <article class="article-card" data-topic="clocks">
-                    <div class="article-content">
-                        <h3>Antique Clock Collecting</h3>
-                        <p>How to evaluate movements, maker marks, and common restoration tasks for mantel and wall clocks.</p>
-                        <div class="article-meta">
-                            <span class="article-date">Mar 2026</span>
-                            <span class="article-read">8 min read</span>
-                        </div>
-                        <a href="articles/antique-clock-collecting.html" class="article-link">Read Article →</a>
-                    </div>
-                </article>
-
-                <!-- New article: Vintage Fountain Pen Collecting -->
-                <article class="article-card" data-topic="pens">
-                    <div class="article-content">
-                        <h3>Vintage Fountain Pen Collecting</h3>
-                        <p>Care, identifying makers, and collecting advice for vintage fountain pens and nibs.</p>
-                        <div class="article-meta">
-                            <span class="article-date">Mar 2026</span>
-                            <span class="article-read">5 min read</span>
-                        </div>
-                        <a href="articles/vintage-fountain-pen-collecting.html" class="article-link">Read Article →</a>
-                    </div>
-                </article>
-
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="pagination-btn prev" disabled>← Previous</button>
+                <div class="pagination-numbers">
+                    <span class="pagination-number active">1</span>
+                    <span class="pagination-number">2</span>
+                    <span class="pagination-number">3</span>
+                    <span class="pagination-dots">...</span>
+                    <span class="pagination-number">5</span>
+                </div>
+                <button class="pagination-btn next">Next →</button>
             </div>
         </div>
     </section>
