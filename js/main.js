@@ -29,7 +29,6 @@
     document.addEventListener('DOMContentLoaded', function() {
         initNavigation();
         initViewToggle();
-        initTopicFilter();
         initSearch();
         initSmoothScroll();
         initNavbarScroll();
@@ -218,16 +217,29 @@
                 searchArticles(searchTerm);
             }, 300);
         });
+        
+        // Also trigger search on Enter key
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const searchTerm = this.value.toLowerCase().trim();
+                searchArticles(searchTerm);
+            }
+        });
     }
     
     function searchArticles(term) {
         articleCards.forEach(card => {
             const title = card.querySelector('h3').textContent.toLowerCase();
             const excerpt = card.querySelector('p').textContent.toLowerCase();
-            const category = card.querySelector('.article-category').textContent.toLowerCase();
+            const topic = card.dataset.topic ? card.dataset.topic.toLowerCase() : '';
             
-            if (!term || title.includes(term) || excerpt.includes(term) || category.includes(term)) {
+            if (!term || title.includes(term) || excerpt.includes(term) || topic.includes(term)) {
                 card.style.display = '';
+                card.style.opacity = '0';
+                setTimeout(() => {
+                    card.style.transition = 'opacity 0.3s ease';
+                    card.style.opacity = '1';
+                }, 50);
             } else {
                 card.style.display = 'none';
             }

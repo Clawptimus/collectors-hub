@@ -90,11 +90,11 @@
         </div>
     </header>
 
-    <!-- Filters & Search -->
+    <!-- Search -->
     <section class="filters-section">
         <div class="container">
             <div class="filters-bar">
-                <div class="search-box">
+                <div class="search-box" style="flex: 1; max-width: 500px;">
                     <input type="text" id="article-search" placeholder="Search articles..." class="search-input">
                     <button class="search-btn" aria-label="Search">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -102,22 +102,6 @@
                             <path d="m21 21-4.35-4.35"></path>
                         </svg>
                     </button>
-                </div>
-                <div class="filter-group">
-                    <select id="topic-filter" class="filter-select">
-                        <option value="">All Topics</option>
-                        <option value="cameras">Vintage Cameras</option>
-                        <option value="gaming">Retro Gaming</option>
-                        <option value="pens">Vintage Pens</option>
-                        <option value="toys">Antique Toys</option>
-                        <option value="tools">Vintage Tools</option>
-                    </select>
-                    <select id="sort-filter" class="filter-select">
-                        <option value="newest">Newest First</option>
-                        <option value="oldest">Oldest First</option>
-                        <option value="popular">Most Popular</option>
-                        <option value="az">A-Z</option>
-                    </select>
                 </div>
                 <div class="view-toggle" role="group" aria-label="View options">
                     <button class="view-btn active" data-view="grid" aria-label="Grid view" aria-pressed="true">
@@ -136,9 +120,6 @@
                         </svg>
                     </button>
                 </div>
-            </div>
-            <div class="active-filters" id="active-filters">
-                <!-- Active filters will appear here -->
             </div>
         </div>
     </section>
