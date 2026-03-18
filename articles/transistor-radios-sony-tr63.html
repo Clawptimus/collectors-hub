@@ -3,6 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ARTICLE_TITLE}} | The Collector's Archive</title>
+    <meta name="description" content="{{META_DESCRIPTION}}">
+    <link rel="canonical" href="https://collectorsarchive.com/articles/{{ARTICLE_SLUG}}.html">
+    
+    <!-- Open Graph / Social Meta -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://collectorsarchive.com/articles/{{ARTICLE_SLUG}}.html">
+    <meta property="og:title" content="{{ARTICLE_TITLE}} | The Collector's Archive">
+    <meta property="og:description" content="{{META_DESCRIPTION}}">
+    <meta property="og:image" content="https://collectorsarchive.com/images/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ARTICLE_TITLE}} | The Collector's Archive">
+    <meta name="twitter:description" content="{{META_DESCRIPTION}}">
+    <meta name="twitter:image" content="https://collectorsarchive.com/images/og-image.jpg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "{{ARTICLE_TITLE}}",
+        "description": "{{META_DESCRIPTION}}",
+        "url": "https://collectorsarchive.com/articles/{{ARTICLE_SLUG}}.html",
+        "datePublished": "{{PUBLISH_DATE}}",
+        "author": {
+            "@type": "Organization",
+            "name": "The Collector's Archive"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "The Collector's Archive",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://collectorsarchive.com/images/logo.png"
+            }
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    
+    <!-- Navigation -->
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon" aria-hidden="true">◈</span>
+                <span class="logo-text">The Collector's Archive</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="primary-navigation">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../articles.html" class="active" aria-current="page">All Articles</a></li>
+                <li><a href="../index.html#topics">Topics</a></li>
+                <li><a href="../index.html#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Editorial Guidelines (template note) -->
+        <!-- Main Content -->
+    <main id="main-content">
+    
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <a href="../index.html">Home</a>
+            <span class="breadcrumb-separator" aria-hidden="true">/</span>
+            <a href="../articles.html">Articles</a>
+            <span class="breadcrumb-separator" aria-hidden="true">/</span>
+            <span class="breadcrumb-current" aria-current="page">{{TOPIC_NAME}}</span>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <header class="article-header">
+        <div class="container">
+            <span class="article-category">{{HUB_NAME}}</span>
+            <h1>{{ARTICLE_TITLE}}</h1>
+            <p class="article-subtitle">{{ARTICLE_SUBTITLE}}</p>
+            <div class="article-meta">
+                <span class="article-date">{{PUBLISH_DATE}}</span>
+                <span class="article-read">{{READ_TIME}} min read</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sony TR-63 Transistor Radio Collector's Guide | The Collector's Archive</title>
     <meta name="description" content="History and identification guide for the Sony TR-63 transistor radio, plus market values.">
     <link rel="canonical" href="https://collectorsarchive.com/articles/transistor-radios-sony-tr63.html">
@@ -64,5 +171,45 @@
         </ul>
     </section>
 </main>
+</body>
+</html>
+        </div>
+    </article>
+
+    <!-- Related Articles -->
+    <section class="related-articles">
+        <div class="container">
+            <h2>Related Articles</h2>
+            <div class="articles-grid"><a href="retro-computing-commodore-64.html">Retro Computing Commodore 64</a><a href="game-boy-game-boy-mastery.html">Game Boy Game Boy Mastery</a><a href="tobacco-tins-antique-tobacco-tins.html">Tobacco Tins Antique Tobacco Tins</a></div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-icon" aria-hidden="true">◈</span>
+                    <span class="logo-text">The Collector's Archive</span>
+                    <p>Expert guides for vintage and antique collecting, restoration, and appreciation.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="../articles.html">All Articles</a></li>
+                        <li><a href="../index.html#topics">Topics</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Collector's Archive. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 </html>
