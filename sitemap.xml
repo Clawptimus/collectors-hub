@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://collectors-hub-eosin.vercel.app/</loc><priority>1.0</priority></url>
-  <url><loc>https://collectors-hub-eosin.vercel.app/articles.html</loc><priority>0.9</priority></url>
-  <url><loc>https://collectors-hub-eosin.vercel.app/articles/board-games-vintage-board-game-collecting.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vintagecollectorsarchive.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://vintagecollectorsarchive.com/articles.html</loc><priority>0.9</priority></url>
+  <url><loc>https://vintagecollectorsarchive.com/articles/board-games-vintage-board-game-collecting.html</loc><priority>0.8</priority></url>
   <!-- existing entries omitted for brevity -->
-  <url><loc>https://collectors-hub-eosin.vercel.app/articles/raleigh-3-speed-sturmey-archer-aw-revival.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vintagecollectorsarchive.com/articles/raleigh-3-speed-sturmey-archer-aw-revival.html</loc><priority>0.8</priority></url>
 
   <!-- Newly added article URLs -->
-  <url><loc>https://collectors-hub-eosin.vercel.app/articles/coleman-220-lantern-restoration.html</loc><priority>0.8</priority></url>
-  <url><loc>https://collectors-hub-eosin.vercel.app/articles/kitchenaid-k5ss-restoration.html</loc><priority>0.8</priority></url>
-  <url><loc>https://collectors-hub-eosin.vercel.app/articles/dual-1219-turntable-restoration.html</loc><priority>0.8</priority></url>
-  <url><loc>https://collectors-hub-eosin.vercel.app/articles/bernina-830-record.html</loc><priority>0.8</priority></url>
-  <url><loc>https://collectors-hub-eosin.vercel.app/articles/vintage-typewriter-collecting.html</loc><priority>0.8</priority></url>
-  <url><loc>https://collectors-hub-eosin.vercel.app/articles/key-collecting.html</loc><priority>0.8</priority></url>
-  <url><loc>https://collectors-hub-eosin.vercel.app/articles/vintage-camera-collecting.html</loc><priority>0.8</priority></url>
-  <url><loc>https://collectors-hub-eosin.vercel.app/articles/antique-map-collecting.html</loc><priority>0.8</priority></url>
-  <url><loc>https://collectors-hub-eosin.vercel.app/articles/pocket-watch-collecting.html</loc><priority>0.8</priority></url>
-  <url><loc>https://collectors-hub-eosin.vercel.app/articles/vintage-radio-collecting.html</loc><priority>0.8</priority></url>
-  <url><loc>https://collectors-hub-eosin.vercel.app/articles/antique-telephone-collecting.html</loc><priority>0.8</priority></url>
-  <url><loc>https://collectors-hub-eosin.vercel.app/articles/antique-clock-collecting.html</loc><priority>0.8</priority></url>
-  <url><loc>https://collectors-hub-eosin.vercel.app/articles/vintage-fountain-pen-collecting.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vintagecollectorsarchive.com/articles/coleman-220-lantern-restoration.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vintagecollectorsarchive.com/articles/kitchenaid-k5ss-restoration.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vintagecollectorsarchive.com/articles/dual-1219-turntable-restoration.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vintagecollectorsarchive.com/articles/bernina-830-record.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vintagecollectorsarchive.com/articles/vintage-typewriter-collecting.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vintagecollectorsarchive.com/articles/key-collecting.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vintagecollectorsarchive.com/articles/vintage-camera-collecting.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vintagecollectorsarchive.com/articles/antique-map-collecting.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vintagecollectorsarchive.com/articles/pocket-watch-collecting.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vintagecollectorsarchive.com/articles/vintage-radio-collecting.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vintagecollectorsarchive.com/articles/antique-telephone-collecting.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vintagecollectorsarchive.com/articles/antique-clock-collecting.html</loc><priority>0.8</priority></url>
+  <url><loc>https://vintagecollectorsarchive.com/articles/vintage-fountain-pen-collecting.html</loc><priority>0.8</priority></url>
 </urlset>

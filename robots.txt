@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://collectors-hub-eosin.vercel.app/sitemap.xml
+
+Sitemap: https://vintagecollectorsarchive.com/sitemap.xml
